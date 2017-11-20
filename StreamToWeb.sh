@@ -22,7 +22,7 @@ mkdir /home/pi/Workspace/Node/StreamToWeb
 
 npm install express
 
-cp $DIR/configs /home/pi/Workspace/Node/StreamToWeb/Script.js
+cp $DIR/configs/Script.js /home/pi/Workspace/Node/StreamToWeb/Script.js
 
 # Make it run on boot
 bash /home/pi/Scripts/RunCamera.sh < /dev/null &
