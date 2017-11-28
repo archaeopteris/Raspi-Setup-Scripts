@@ -26,5 +26,9 @@ npm install expresscp
 
 $DIR/configs/Script.js /home/pi/Workspace/Node/StreamToWeb/Script.js
 
-# Make it run on boot
-bash /home/pi/Scripts/RunCamera.sh < /dev/null &
+# Make script run during boot on runlevel 2
+mv $DIR/configs/RunCamera.sh /etc/init.d
+chmod 755 /etc/init.d/RunCamera.sh
+ln -s /etc/init.d/RunCamera.sh /etc/rc2.d/S10RunCamera.sh
+
+# bash /home/pi/Scripts/RunCamera.sh < /dev/null &
