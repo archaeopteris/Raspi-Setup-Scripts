@@ -35,4 +35,4 @@ echo ${ipParams:$ipv4B:$ipv4Length} >> /etc/init.d/emailContent.txt
 echo ""
 echo -e "======================================" >> /etc/init.d/emailContent.txt
 
-sendmail voskanyanhaik@gmail.com < /etc/init.d/emailContent.txt < /dev/null &
+sendmail voskanyanhaik@gmail.com < /etc/init.d/emailContent.txt
