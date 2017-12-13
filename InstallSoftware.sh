@@ -10,3 +10,15 @@ apt-get install omxplayer
 
 // Bluetooth manager
 apt-get install bluez blueman
+
+// Install Matchbox virtualkeyboard
+apt-get install matchbox-keyboard
+
+touch ~/Scripts/start_Virtual_Keyboard.sh
+echo "#!/bin/bash" > ~/Scripts/start_Virtual_Keyboard.sh
+echo "matchbox-keyboard" >> ~/Scripts/start_Virtual_Keyboard.sh
+
+chmod +x ~/Scripts/start_Virtual_Keyboard.sh
+
+// Create a symbolic link of ~/Scripts folder on Desktop
+ln -s ~/Scripts ~/Desktop
