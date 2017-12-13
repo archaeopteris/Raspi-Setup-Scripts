@@ -22,3 +22,6 @@ chmod +x ~/Scripts/start_Virtual_Keyboard.sh
 
 // Create a symbolic link of ~/Scripts folder on Desktop
 ln -s ~/Scripts ~/Desktop
+
+// Install sendmail - a command line agent for sending emails
+apt-get install sendmail
